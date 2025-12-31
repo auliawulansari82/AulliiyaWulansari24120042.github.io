@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Latihan Data Nilai Mahasiswa</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#dce3e6;
+    margin:0;
+    padding:30px;
+}
+
+/* JUDUL */
+h1{
+    font-size:42px;
+    font-weight:normal;
+    color:#444;
+    margin-bottom:20px;
+}
+
+/* CONTAINER */
+.wrapper{
+    display:flex;
+    gap:25px;
+}
+
+/* BOX */
+.box{
+    background:#e4edd2;
+    border:1px solid #888;
+    padding:15px;
+    width:50%;
+    position:relative;
+}
+
+/* LABEL */
+.label{
+    position:absolute;
+    top:-14px;
+    right:15px;
+    background:#9b7b7b;
+    color:white;
+    padding:4px 10px;
+    font-size:14px;
+}
+
+/* GARIS */
+.line{
+    font-family:"Courier New", monospace;
+    font-size:14px;
+}
+
+/* JUDUL BOX */
+.title{
+    text-align:center;
+    font-weight:bold;
+    margin:8px 0;
+}
+
+/* TABLE */
+table{
+    width:100%;
+}
+
+td{
+    padding:6px;
+}
+
+/* INPUT */
+input{
+    background:#d9e3c3;
+    border:1px solid #555;
+    padding:4px;
+}
+
+.small{ width:120px; }
+.medium{ width:200px; }
+.large{ width:100%; }
+
+/* BUTTON */
+button{
+    padding:6px 14px;
+    background:#ddd;
+    border:1px solid #555;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#ccc;
+}
+
+/* CATATAN */
+.note{
+    margin-top:10px;
+    font-size:14px;
+}
+
+/* OUTPUT */
+.output-text{
+    line-height:1.9;
+}
+</style>
+</head>
+
+<body>
+
+<h1>LATIHAN</h1>
+
+<div class="wrapper">
+
+<!-- INPUT -->
+<div class="box">
+    <div class="label">Input</div>
+
+    <div class="line">====================================================================================================================</div>
+    <div class="title">DATA NILAI MAHASISWA</div>
+    <div class="line">====================================================================================================================</div>
+
+    <table>
+        <tr>
+            <td>Masukan NIM</td><td>:</td>
+            <td><input class="medium" type="text"></td>
+        </tr>
+        <tr>
+            <td>Nama Mahasiswa</td><td>:</td>
+            <td><input class="large" type="text"></td>
+        </tr>
+        <tr>
+            <td>Nilai UTS</td><td>:</td>
+            <td><input class="small" type="number"></td>
+        </tr>
+        <tr>
+            <td>Nilai UAS</td><td>:</td>
+            <td><input class="small" type="number"></td>
+        </tr>
+        <tr>
+            <td>Nilai Tugas</td><td>:</td>
+            <td><input class="small" type="number"></td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <button>Proses</button>
+                <button>Batal</button>
+            </td>
+        </tr>
+    </table>
+
+    <div class="line">====================================================================================================================</div>
+
+    <div class="note">
+        UTS : 30% &nbsp; UAS : 40% &nbsp; TUGAS : 30% <br>
+        85 s/d 100 : A, 70 s/d 84 : B, 60 s/d 69 : C, 40 s/d 59 : D, E
+    </div>
+</div>
+
+<!-- OUTPUT -->
+<div class="box">
+    <div class="label">Output</div>
+
+    <div class="line">====================================================================================================================</div>
+    <div class="title">DATA NILAI MAHASISWA</div>
+    <div class="line">====================================================================================================================</div>
+
+    <div class="output-text">
+        NIM : <br>
+        Nama Mahasiswa : <br>
+        Nilai UTS : <br>
+        Nilai UAS : <br>
+        Nilai Tugas : <br>
+        Index :
+    </div>
+
+    <div class="line">====================================================================================================================</div>
+</div>
+
+</div>
+
+</body>
+</html>
+
+
+
+
